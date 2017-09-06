@@ -1,0 +1,21 @@
+@import "../sass/susy";
+@import "rezet.scss";
+
+$susy: (
+  math: static,
+  gutter-position: after,
+  container: auto,
+  container-position: center,
+  columns: 12,
+  gutters: 0.1666667,
+  column-width: 90px,
+  global-box-sizing: content-box,
+  last-flow: to
+);
+
+header{
+	@include span(12);
+}
+header nav p{
+	@include span(1 of 12);
+}
